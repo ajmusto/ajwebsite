@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Travel is fun!!!Experience it...</title>
+       
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+        <link href="lightbox/css/lightbox.css" rel="stylesheet" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans|Baumans' rel='stylesheet' type='text/css'>
+        
+       
+        <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript">window.jQuery || document.write('<script type="text/javascript" src="js\/vendor\/1.7.2.jquery.min"><\/script>')</script>
+        
+        <script src="lightbox/js/lightbox.js"></script>
+        <script src="js/prefixfree.min.js"></script>
+        <script src="js/jquery.slides.min.js"></script>
+        <script src="js/script.js"></script>
+        
+              
+        
+        <script>
+        $(function() {
+          $('#slides').slidesjs({	
+            height: 358,
+            navigation: false,
+            pagination: false,
+            effect: {
+              fade: {
+                speed: 400
+              }
+            },
+            callback: {
+                start: function(number)
+                {			
+                    $("#slider_content1,#slider_content2,#slider_content3").fadeOut(500);
+                },
+                complete: function(number)
+                {			
+                    $("#slider_content" + number).delay(500).fadeIn(1000);
+                }		
+            },
+            play: {
+                active: false,
+                auto: true,
+                interval: 6000,
+                pauseOnHover: false,
+                effect: "fade"
+            }
+          });
+        });
+        </script>
+	</head>
+
+	<body>
+        <header>
+            <div class="toggleMobile">
+                <span class="menu1"></span>
+                <span class="menu2"></span>
+                <span class="menu3"></span>
+            </div>
+            <div id="mobileMenu">
+                <ul>
+                    <li><a href="javascript:void(0)">Home</a></li>
+                    <li><a href="javascript:void(0)">Destinations</a></li>
+                    <li><a href="javascript:void(0)">About</a></li>
+					<li><a href="javascript:void(0)">Contact</a></li>
+                </ul>
+            </div>           
+            <h1>AJMUSTO TRAVELOG</h1>
+            <p>The world is a very small place...</p>           
+            
+            <nav>
+            	<h2 class="hidden">Our navigation</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ajDestinationMainPage.html">Destinations</a></li>
+                    <li><a href="ajAboutPage.html">About</a></li>
+                    <li><a href="ajContactPage.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="container">
+        	<h2 class="hidden">Bekal</h2>
+            <article id="slider_content1">
+			<h3>Bekal Fort</h3>
+                <p>Bekal,Kerala</p>
+                               
+            </article>
+            <article id="slider_content2">
+                        <h3>Sahasralinga</h3>
+                <p>Sirsi</p>        
+            </article>
+            <article id="slider_content3">
+                <h3>Vivanta By Taj, Madikeri</h3>
+                <p>Madikeri</p>               
+            </article>
+            <div id="slides">
+                <img src="img/bek.jpg" alt="Some alt text">
+                <img src="img/slinga.jpg" alt="Some alt text">    	
+                <img src="img/viv3.jpg" alt="Some alt text">
+            </div>
+        </section>       
+       
+	</body>
+</html>

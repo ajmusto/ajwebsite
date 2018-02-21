@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact...</title>
+        <link rel="stylesheet" href="css/styleAbout.css" type="text/css" media="screen" />
+        <link href="lightbox/css/lightbox.css" rel="stylesheet" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans|Baumans' rel='stylesheet' type='text/css'>
+        
+        <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript">window.jQuery || document.write('<script type="text/javascript" src="js\/vendor\/1.7.2.jquery.min"><\/script>')</script>
+        
+        <script src="lightbox/js/lightbox.js"></script>       
+        <script src="js/jquery.slides.min.js"></script>
+        <script src="js/script.js"></script>          
+        <script>		
+		$(document).ready(function(){    
+			$("#slider_content1").load("contact_test.txt");
+			$("#slider_content1").addClass("slider_contentcss");    
+		});	
+			
+        </script>  
+        <style>
+	.slider_contentcss
+	{
+	        color:#EBE8DE;
+	        font-size:15px;
+	        font-weight:bold;
+	        margin-bottom:10px;
+	        background-color:#333333;
+	        padding:10px 15px;
+	        border-radius: 15px 0 15px 0;
+	        display:inline-block;
+	}
+	</style>          
+        
+	</head>
+
+	<body>
+       	 <header>
+            <div class="toggleMobile">
+                <span class="menu1"></span>
+                <span class="menu2"></span>
+                <span class="menu3"></span>
+            </div>
+            <div id="mobileMenu">
+                <ul>
+                    <li><a href="javascript:void(0)">Home</a></li>
+                    <li><a href="javascript:void(0)">Destinations</a></li>
+                    <li><a href="javascript:void(0)">About</a></li>
+					<li><a href="javascript:void(0)">Contact</a></li>
+                </ul>
+            </div>           
+             <h1>CONTACT ME</h1>
+            <p>AJMUSTO</p>          
+            
+            <nav>
+            	<h2 class="hidden">Our navigation</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ajDestinationMainPage.html">Destinations</a></li>
+                    <li><a href="ajAboutPage.html">About</a></li>
+                    <li><a href="ajContactPage.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+         <section class="container">        	
+            <div id="slider_content1">
+                <h3></h3>								
+            </div>
+           
+            <div id="slides">
+                <img src="img/about.jpg" alt="Some alt text">
+                
+            </div>
+        </section>       
+       
+	</body>
+</html>
