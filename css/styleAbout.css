@@ -1,0 +1,187 @@
+body
+{
+        border-top:5px solid #013ADF;
+        background:#ebe8de;
+        font-family: 'Open Sans', sans-serif;
+        color:#333333;		
+		overflow:hidden;
+}
+
+
+p
+{
+        margin:5px 0;
+        line-height:25px;
+}
+
+a
+{
+        text-decoration:none;
+        color:inherit;
+        transition: color .5s ease;
+}
+
+strong
+{
+        font-weight:bold;
+}
+
+figcaption strong
+{
+        border-bottom: 1px solid #D6D0C1;
+        padding-bottom:10px;
+        margin: 10px 0;
+        display:block;
+}
+
+figcaption
+{
+        line-height: 25px;
+        font-size:14px;
+        width:200px;
+}
+
+hr
+{
+        background-color: #D6D0C1;
+        border:0;
+        height:1px;
+        margin:20px 0;
+}
+
+
+/* HEADER */
+
+header
+{
+        position:relative;
+        width:auto;
+        max-width:900px;
+        margin: 0 auto 20px auto;
+}
+
+header h1
+{
+        margin:35px 0 0 0;
+        font-size:35px;
+        color:#013ADF;
+        font-family: 'Baumans', cursive;
+}
+
+header p
+{
+        font-family: 'Open Sans', sans-serif;
+        font-size:16px;
+        color: #4A463B;
+        margin-left:132px;
+}
+
+nav
+{
+        position:absolute;
+        right:0;
+        bottom:0;
+}
+
+nav ul
+{
+        list-style:none;
+}
+
+nav ul li
+{
+        display:block;
+        float:left;
+        padding:3px 15px;
+}
+
+nav ul li a
+{
+        font-family: 'Open Sans', sans-serif;
+        text-transform:uppercase;
+        transition: all .25s ease;
+}
+
+nav ul li a:hover
+{
+        color:#013ADF;
+}
+
+#slider_content1
+{
+        line-height: 25px;
+        font-family: 'Open Sans', sans-serif;
+        width:650px;
+        position:absolute;
+        top:5%;
+        left:50%;
+		right:15%
+        display:none;
+        z-index:11;
+}
+
+#slider_content1 h3, #slider_content2 h3, #slider_content3 h3, #slider_content1 p, #slider_content2 p, #slider_content3 p
+{
+        color:#EBE8DE;
+        font-size:15px;
+        font-weight:bold;
+        margin-bottom:10px;
+        background-color:#333333;
+        padding:10px 15px;
+        border-radius: 15px 0 15px 0;
+        display:inline-block;
+}
+
+
+
+
+
+
+#slider_content1
+{
+        display:block;
+}
+
+
+
+
+
+/* SLIDESHOW */
+/* Prevent the slideshow from flashing on load */
+.slidesjs-container
+{
+        border-top: 1px #d6d0c1 solid;
+		
+}
+#slides
+{
+        display: none
+		height:450.5px;
+}
+
+/* Center the slideshow */
+.container
+{
+        width:auto;
+        margin: 0 auto;
+        position:relative;
+		background:#333333;
+}
+
+/* Show active item in the pagination */
+.slidesjs-pagination .active
+{
+        color:red;
+}
+
+/* MISC */
+.clear
+{
+        clear:both;
+}
+.hidden
+{
+        position:absolute;
+        clip: rect(1px 1px 1px 1px); /* IE6 & 7 */
+          clip: rect(1px, 1px, 1px, 1px);
+}
